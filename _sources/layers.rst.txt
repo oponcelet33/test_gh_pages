@@ -1,0 +1,33 @@
+============
+Layer Module
+============
+
+.. py:currentmodule:: scatus
+
+**Toto**
+
+---
+
+.. autoclass:: Layer
+.. automethod:: Layer.__init__
+
+.. tikz:: [>=latex',dotted,thick, scale=2] \draw[->] (0,0) -- (1,1) -- (1,0) -- (2,0);
+   :libs: arrows
+   
+   
+**Pipo**
+
+.. tikz:: my caption
+   :libs: arrows.meta
+
+   \begin{tikzpicture}[scale=1.3]
+       \draw[-{Triangle}] (0,0) -- (1,0) node[below] {$\vu*{e}_1$};
+       \draw[-{Triangle}] (0,0) -- (0,1) node[right] {$\vu*{e}_2$};
+       \draw[-{Triangle}, thick] (0,0) -- ++ (40:1) node[above] {$\vu*{n}^j$};
+       \draw[-{Triangle}, thick] (0,0) -- ++ (-140:1) node[above, yshift=2mm, xshift=2mm] {$\vu*{n}^i$};
+       \draw[->] (0.7,0) arc[radius=0.7cm, start angle=0,  delta angle=40] node at (20:1) {$\theta_j$};
+       \draw[->] (0.3,0) arc[radius=0.3cm, start angle=0,  delta angle=220] node at (130:0.6) {$\theta_i$};
+   \end{tikzpicture}
+   
+---
+
